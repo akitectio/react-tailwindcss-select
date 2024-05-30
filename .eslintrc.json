@@ -12,6 +12,7 @@
         "plugin:prettier/recommended",
         "plugin:react-hooks/recommended",
         "next/core-web-vitals",
+        "plugin:storybook/recommended",
         "plugin:storybook/recommended"
     ],
     "overrides": [],
