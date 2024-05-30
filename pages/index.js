@@ -191,9 +191,8 @@ const Home = () => {
                     </Header>
 
                     <div
-                        className={`transition duration-75 ${
-                            showCode ? "bg-slate-800" : "bg-gray-100"
-                        } px-2 pb-6 md:p-8 min-h-[15rem] rounded-md border md:min-h-[20rem] lg:min-h-[25rem] w-full`}
+                        className={`transition duration-75 ${showCode ? "bg-slate-800" : "bg-gray-100"
+                            } px-2 pb-6 md:p-8 min-h-[15rem] rounded-md border md:min-h-[20rem] lg:min-h-[25rem] w-full`}
                     >
                         {showCode ? (
                             <div>
@@ -208,7 +207,7 @@ const Home = () => {
                                     . <br />
                                     Any contribution to the package will be welcome. You can access
                                     the package source code{" "}
-                                    <DarkLink url="https://github.com/onesine/react-tailwindcss-select">
+                                    <DarkLink url="https://github.com/akitectio/react-tailwindcss-select">
                                         here
                                     </DarkLink>
                                     <br />
@@ -274,17 +273,17 @@ const Home = () => {
                                     isDisabled ||
                                     loading ||
                                     isGroupOption) && (
-                                    <div className="mt-10 transition duration-75">
-                                        <Alert title={"Information"}>
-                                            {printAlertContent("isClearable", isClearable)}
-                                            {printAlertContent("isSearchable", isSearchable)}
-                                            {printAlertContent("isMultiple", isMultiple)}
-                                            {printAlertContent("isDisabled", isDisabled)}
-                                            {printAlertContent("loading", loading)}
-                                            {printAlertContent("isGroupOption", isGroupOption)}
-                                        </Alert>
-                                    </div>
-                                )}
+                                        <div className="mt-10 transition duration-75">
+                                            <Alert title={"Information"}>
+                                                {printAlertContent("isClearable", isClearable)}
+                                                {printAlertContent("isSearchable", isSearchable)}
+                                                {printAlertContent("isMultiple", isMultiple)}
+                                                {printAlertContent("isDisabled", isDisabled)}
+                                                {printAlertContent("loading", loading)}
+                                                {printAlertContent("isGroupOption", isGroupOption)}
+                                            </Alert>
+                                        </div>
+                                    )}
                             </SelectContainer>
                         )}
                     </div>

@@ -8,7 +8,7 @@ import Options from "./Options";
 import SearchInput from "./SearchInput";
 import SelectProvider from "./SelectProvider";
 import Spinner from "./Spinner";
-import { Option, Options as ListOption, SelectProps } from "./type";
+import { Options as ListOption, Option, SelectProps } from "./type";
 
 const Select: React.FC<SelectProps> = ({
     options = [],
@@ -202,7 +202,9 @@ const Select: React.FC<SelectProps> = ({
                                                         : "text-gray-600 truncate cursor-default select-none"
                                                 }
                                             >
-                                                {item.label}
+                                                <div
+                                                    dangerouslySetInnerHTML={{ __html: item.label }}
+                                                />
                                             </p>
                                             {!isDisabled && (
                                                 <div

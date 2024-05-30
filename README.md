@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/onesine/react-tailwindcss-select/blob/master/LICENSE">
+    <a href="https://github.com/akitectio/react-tailwindcss-select/blob/master/LICENSE">
         <img src="https://img.shields.io/npm/l/react-tailwindcss-select.svg" alt="MIT License">
     </a>
     <a href="https://www.npmjs.com/package/react-tailwindcss-select">
@@ -41,7 +41,7 @@ make my own based on react-select which I like (and also because I generally lik
 wheel 😅).
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/onesine/react-tailwindcss-select/master/assets/img/Screen_Shot_2022-08-04_at_17.04.09.png" alt="preview react-tailwindcss-select">
+    <img src="https://raw.githubusercontent.com/akitectio/react-tailwindcss-select/master/assets/img/Screen_Shot_2022-08-04_at_17.04.09.png" alt="preview react-tailwindcss-select">
 </p>
 
 ## Online Demo
@@ -53,13 +53,13 @@ You can find the online demo at [here](https://demo-react-tailwindcss-select.ver
 You can use yarn
 
 ```bash
-yarn add react-tailwindcss-select
+yarn add @akitectio/react-tailwindcss-select
 ```
 
 Or via npm
 
 ```bash
-npm install react-tailwindcss-select
+npm install @akitectio/react-tailwindcss-select
 ```
 
 make sure you have installed the peer dependencies as well with the below versions.
@@ -88,7 +88,7 @@ module.exports = {
     // ...
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
-        "./node_modules/react-tailwindcss-select/dist/index.esm.js"
+        "./node_modules/@akitectio/react-tailwindcss-select/dist/index.esm.js"
     ]
     // ...
 };
@@ -97,8 +97,8 @@ module.exports = {
 ### None Tailwind Project
 
 On a project that does not use tailwind, you need to import the component's CSS as well. To do this
-use these two codes: `import Select from 'react-tailwindcss-select'` and
-`import 'react-tailwindcss-select/dist/index.css'`
+use these two codes: `import Select from '@akitectio/react-tailwindcss-select'` and
+`import '@akitectio/react-tailwindcss-select/dist/index.css'`
 
 > **Warning**
 >
@@ -113,7 +113,7 @@ Then use react-tailwindcss-select in your app:
 
 ```javascript
 import React from "react";
-import Select from "react-tailwindcss-select";
+import Select from "@akitectio/react-tailwindcss-select";
 
 const options = [
     { value: "fox", label: "🦊 Fox" },
@@ -152,7 +152,7 @@ class App extends React.Component {
 
 ```javascript
 import { useState } from "react";
-import Select from "react-tailwindcss-select";
+import Select from "@akitectio/react-tailwindcss-select";
 
 const options = [
     { value: "fox", label: "🦊 Fox" },
@@ -192,7 +192,7 @@ value. By default, the `primaryColor` is set to `blue`
 
 ```javascript
 import { useState } from "react";
-import Select from "react-tailwindcss-select";
+import Select from "@akitectio/react-tailwindcss-select";
 
 const options = [
     { value: "fox", label: "🦊 Fox" },
@@ -478,7 +478,7 @@ interface SelectProps {
 
 ```javascript
 import { useState } from "react";
-import Select from "react-tailwindcss-select";
+import Select from "@akitectio/react-tailwindcss-select";
 
 const options = [
     { value: "fox", label: "🦊 Fox" },
@@ -542,7 +542,7 @@ Open a browser and navigate to `http://localhost:8888`
 
 Got ideas on how to make this better? Open an issue!
 
-Don't forget to see [CONTRIBUTING.md](https://github.com/onesine/react-tailwindcss-select/blob/master/CONTRIBUTING.md)
+Don't forget to see [CONTRIBUTING.md](https://github.com/akitectio/react-tailwindcss-select/blob/master/CONTRIBUTING.md)
 
 ## Thanks
 

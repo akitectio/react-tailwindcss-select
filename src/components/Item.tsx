@@ -60,13 +60,15 @@ const Item: React.FC<ItemProps> = ({ item, primaryColor }) => {
             ) : (
                 <>
                     {item.disabled ? (
-                        <DisabledItem>{item.label}</DisabledItem>
+                        <DisabledItem>
+                            <div dangerouslySetInnerHTML={{ __html: item.label }} />
+                        </DisabledItem>
                     ) : (
                         <li
                             tabIndex={0}
                             onKeyDown={(e: React.KeyboardEvent<HTMLLIElement>) => {
-                                if (e.key === ' ' || e.key === 'Enter') {
-                                    handleValueChange(item)
+                                if (e.key === " " || e.key === "Enter") {
+                                    handleValueChange(item);
                                 }
                             }}
                             aria-selected={isSelected}
@@ -74,7 +76,7 @@ const Item: React.FC<ItemProps> = ({ item, primaryColor }) => {
                             onClick={() => handleValueChange(item)}
                             className={getItemClass()}
                         >
-                            {item.label}
+                            <div dangerouslySetInnerHTML={{ __html: item.label }} />
                         </li>
                     )}
                 </>

@@ -26,7 +26,7 @@ const GroupItem: React.FC<GroupItemProps> = ({ item, primaryColor }) => {
                                     : "pr-2 py-2 cursor-default select-none truncate font-bold text-gray-700"
                             }
                         >
-                            {item.label}
+                            <div dangerouslySetInnerHTML={{ __html: item.label }} />
                         </div>
                     )}
 
