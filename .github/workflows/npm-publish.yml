@@ -26,6 +26,10 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: git config --global user.email "tdduy.dev@gmail.com"
+      - run: git config --global user.name "DUY TRAN"
+      - run: git add -A
+      - run: git commit -m "Commit changes before versioning"
       - run: npm version patch -m "Upgrade to %s"
       - run: npm run pret && npm run lint && npm run clean && rollup -c && npm run tailwind-build
       - run: npm publish
