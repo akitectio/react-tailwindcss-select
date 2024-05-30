@@ -22,7 +22,8 @@
         "pret:fix": "prettier -w .",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
         "build": "npm run pret && npm run lint && npm run clean && rollup -c && npm run tailwind-build",
-        "dev": "next dev -p 8888"
+        "dev": "next dev -p 8888",
+        "test": "echo \"Error: no test specified\" && exit 0"
     },
     "repository": {
         "type": "git",
